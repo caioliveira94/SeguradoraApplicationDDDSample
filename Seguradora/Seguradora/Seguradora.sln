@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{E37B84A6-42BB-4EDA-B04A-37DEE86B0B70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{DAE3EF74-54E4-49F0-8624-91A77E091C7C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{3C9AB913-CBA7-4811-ABF6-5FA5280A5805}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{91920ACA-348A-4AB5-AE07-702549C93F64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{A587EA20-3D04-49D6-A251-EFF9B9A58876}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{1569E169-6AC1-460F-811E-989E69901C4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{9D5462CD-7661-4DA6-816A-A6282F0716FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Domain", "src\Seguradora.Domain\Seguradora.Domain.csproj", "{1012E60A-D76E-466B-ADB8-822CA618BAE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Infra.Data", "src\Seguradora.Infra.Data\Seguradora.Infra.Data.csproj", "{A15C48A3-2990-4F86-A168-364E7BAF9EDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Presentation.Web", "src\Seguradora.Presentation.Web\Seguradora.Presentation.Web.csproj", "{FC4AA3DD-1A8D-4218-B844-8E2C0D970F49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Application", "src\Seguradora.Application\Seguradora.Application.csproj", "{FDEFA2FD-50AC-4507-878E-9FE75273DF4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1012E60A-D76E-466B-ADB8-822CA618BAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1012E60A-D76E-466B-ADB8-822CA618BAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1012E60A-D76E-466B-ADB8-822CA618BAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1012E60A-D76E-466B-ADB8-822CA618BAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15C48A3-2990-4F86-A168-364E7BAF9EDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15C48A3-2990-4F86-A168-364E7BAF9EDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15C48A3-2990-4F86-A168-364E7BAF9EDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15C48A3-2990-4F86-A168-364E7BAF9EDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC4AA3DD-1A8D-4218-B844-8E2C0D970F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4AA3DD-1A8D-4218-B844-8E2C0D970F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4AA3DD-1A8D-4218-B844-8E2C0D970F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4AA3DD-1A8D-4218-B844-8E2C0D970F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEFA2FD-50AC-4507-878E-9FE75273DF4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEFA2FD-50AC-4507-878E-9FE75273DF4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEFA2FD-50AC-4507-878E-9FE75273DF4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEFA2FD-50AC-4507-878E-9FE75273DF4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1569E169-6AC1-460F-811E-989E69901C4B} = {A587EA20-3D04-49D6-A251-EFF9B9A58876}
+		{9D5462CD-7661-4DA6-816A-A6282F0716FC} = {A587EA20-3D04-49D6-A251-EFF9B9A58876}
+		{1012E60A-D76E-466B-ADB8-822CA618BAE0} = {91920ACA-348A-4AB5-AE07-702549C93F64}
+		{A15C48A3-2990-4F86-A168-364E7BAF9EDE} = {1569E169-6AC1-460F-811E-989E69901C4B}
+		{FC4AA3DD-1A8D-4218-B844-8E2C0D970F49} = {E37B84A6-42BB-4EDA-B04A-37DEE86B0B70}
+		{FDEFA2FD-50AC-4507-878E-9FE75273DF4F} = {3C9AB913-CBA7-4811-ABF6-5FA5280A5805}
+	EndGlobalSection
+EndGlobal

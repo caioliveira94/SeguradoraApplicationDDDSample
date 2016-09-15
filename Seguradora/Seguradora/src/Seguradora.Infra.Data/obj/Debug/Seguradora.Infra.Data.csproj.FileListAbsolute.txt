@@ -1,0 +1,12 @@
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\Seguradora.Infra.Data.dll.config
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\Seguradora.Infra.Data.dll
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\Seguradora.Infra.Data.pdb
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\EntityFramework.dll
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\EntityFramework.xml
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\obj\Debug\Seguradora.Infra.Data.csprojResolveAssemblyReference.cache
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\obj\Debug\Seguradora.Infra.Data.dll
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\obj\Debug\Seguradora.Infra.Data.pdb
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\Seguradora.Domain.dll
+C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Infra.Data\bin\Debug\Seguradora.Domain.pdb
