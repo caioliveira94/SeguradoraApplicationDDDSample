@@ -7,11 +7,11 @@ namespace Seguradora.Application.Interfaces
 {
     public interface IClienteAppService : IDisposable
     {
-        Cliente Adicionar(Cliente obj);
+        ClienteEnderecoViewModel Adicionar(ClienteEnderecoViewModel obj);
 
         ClienteViewModel ObterPorId(Guid id);
 
-        ClienteViewModel ObterPorTelefone(string email);
+        ClienteViewModel ObterPorEmail(string email);
 
         IEnumerable<ClienteViewModel> ObterTodos();
 

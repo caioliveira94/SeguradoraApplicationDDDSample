@@ -1,0 +1,13 @@
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\Seguradora.Application.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\Seguradora.Application.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\AutoMapper.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\Seguradora.Domain.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\Seguradora.Infra.Data.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\EntityFramework.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\Seguradora.Domain.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\Seguradora.Infra.Data.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\AutoMapper.xml
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\EntityFramework.xml
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\obj\Debug\Seguradora.Application.csprojResolveAssemblyReference.cache
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\obj\Debug\Seguradora.Application.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\obj\Debug\Seguradora.Application.pdb

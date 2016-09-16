@@ -3,3 +3,7 @@ C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Segurador
 C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Domain\obj\Debug\Seguradora.Domain.dll
 C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Domain\obj\Debug\Seguradora.Domain.pdb
 C:\Users\caio.oliveira\Source\Repos\ConsorcioApplicationDDD\Seguradora\Seguradora\src\Seguradora.Domain\obj\Debug\Seguradora.Domain.csprojResolveAssemblyReference.cache
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Domain\bin\Debug\Seguradora.Domain.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Domain\bin\Debug\Seguradora.Domain.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Domain\obj\Debug\Seguradora.Domain.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Domain\obj\Debug\Seguradora.Domain.pdb
