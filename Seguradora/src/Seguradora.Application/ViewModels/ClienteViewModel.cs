@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Seguradora.Application.ViewModels
@@ -8,6 +9,7 @@ namespace Seguradora.Application.ViewModels
         public ClienteViewModel()
         {
             ClienteId = Guid.NewGuid();
+            Enderecos = new List<EnderecoViewModel>();
         }
 
         [Key]
@@ -28,6 +30,14 @@ namespace Seguradora.Application.ViewModels
         [MaxLength(150, ErrorMessage = "E-mail deve ter no máximo {0} caracteres")]
         public string Email { get; set; }
 
-        public EnderecoViewModel endereco { get; set; }
+        [Required(ErrorMessage = "Favor preencher o CPF")]
+        [MaxLength(11, ErrorMessage = "CPF deve ter {0} caracteres")]
+        [MinLength(11, ErrorMessage = "CPF deve ter {0} caracteres")]
+        public string CPF { get; set; }
+
+        [ScaffoldColumn(false)]
+        public bool Ativo { get; set; }
+
+        public ICollection<EnderecoViewModel> Enderecos { get; set; }
     }
 }

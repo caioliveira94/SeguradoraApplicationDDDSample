@@ -18,23 +18,23 @@ namespace Seguradora.Application
             _clienteRepository = new ClienteRepository();
         }
 
-        public ClienteEnderecoViewModel Adicionar(ClienteEnderecoViewModel obj)
+        public ClienteEnderecoViewModel Adicionar(ClienteEnderecoViewModel clienteEndereco)
         {
-            var cliente = Mapper.Map<ClienteEnderecoViewModel, Cliente>(obj);
-            var endereco = Mapper.Map<ClienteEnderecoViewModel, Endereco>(obj);
+            var cliente = Mapper.Map<ClienteEnderecoViewModel, Cliente>(clienteEndereco);
+            var endereco = Mapper.Map<ClienteEnderecoViewModel, Endereco>(clienteEndereco);
 
-            cliente.endereco = endereco;
+            cliente.Enderecos.Add(endereco);
 
             _clienteRepository.Adicionar(cliente);
 
-            return obj;
+            return clienteEndereco;
         }
 
-        public ClienteViewModel Atualizar(ClienteViewModel obj)
+        public ClienteViewModel Atualizar(ClienteViewModel cliente)
         {
-            _clienteRepository.Atualizar(Mapper.Map<ClienteViewModel, Cliente>(obj));
+            _clienteRepository.Atualizar(Mapper.Map<ClienteViewModel, Cliente>(cliente));
 
-            return obj;
+            return cliente;
         }
 
         public void Dispose()
@@ -61,6 +61,11 @@ namespace Seguradora.Application
         {
             _clienteRepository.Remover(id);
             GC.SuppressFinalize(this);
+        }
+
+        public ClienteViewModel ObterPorCpf(string cpf)
+        {
+            throw new NotImplementedException();
         }
     }
 }

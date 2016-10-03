@@ -40,6 +40,7 @@ namespace Seguradora.Presentation.Web.Controllers
         // POST: Clientes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        //Lembrar de utilizar o Bind em formulários com post
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(ClienteEnderecoViewModel clienteEnderecoViewModel)
@@ -71,6 +72,7 @@ namespace Seguradora.Presentation.Web.Controllers
         // POST: Clientes/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // Lembrar do Bind também
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(ClienteViewModel clienteViewModel)

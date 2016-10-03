@@ -19,14 +19,14 @@ namespace Seguradora.Infra.Data.Repository
             DbSet = Db.Set<TEntity>();
         }
 
-        public TEntity Adicionar(TEntity obj)
+        public virtual TEntity Adicionar(TEntity obj)
         {
             var retorno = DbSet.Add(obj);
             SaveChanges();
             return retorno;
         }
 
-        public TEntity Atualizar(TEntity obj)
+        public virtual TEntity Atualizar(TEntity obj)
         {
             var entry = Db.Entry(obj); //Cria uma entrada de dados na memória do contexto
             DbSet.Attach(obj); //insere o objeto na memória do contexto
@@ -61,7 +61,7 @@ namespace Seguradora.Infra.Data.Repository
             //return DbSet.Take(t).Skip(s).ToList(); parâmetros do método int s, int t
         }
 
-        public void Remover(Guid id)
+        public virtual void Remover(Guid id)
         {
             DbSet.Remove(DbSet.Find(id));
             SaveChanges();

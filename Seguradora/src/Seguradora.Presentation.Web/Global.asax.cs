@@ -13,7 +13,7 @@ namespace Seguradora.Presentation.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            AutoMapperConfig.RegisterMappings(); //Ao inicializar a aplicação, carrega os perfis de mapeamento
+            AutoMapperConfig.RegisterMappings(); //Ao inicializar a aplicação, carrega os perfis de mapeamento do AutoMapper
         }
     }
 }
