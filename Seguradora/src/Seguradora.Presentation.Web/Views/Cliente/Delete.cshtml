@@ -1,4 +1,5 @@
 ﻿@model Seguradora.Application.ViewModels.ClienteViewModel
+@using System.Security.Claims;
 
 @{
     ViewBag.Title = "Delete";
@@ -36,6 +37,10 @@
         </dd>
 
     </dl>
+
+    @{ 
+        var cliente = (Claim)ViewBag.Permissoes;
+    }
 
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()

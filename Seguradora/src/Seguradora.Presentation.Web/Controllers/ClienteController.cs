@@ -1,48 +1,52 @@
 ﻿using Seguradora.Application;
 using Seguradora.Application.ViewModels;
+using Seguradora.Infra.CrossCutting.MvcFilters;
 using System;
+using System.Linq;
 using System.Net;
+using System.Security.Claims;
 using System.Web.Mvc;
 
 namespace Seguradora.Presentation.Web.Controllers
 {
-    public class ClientesController : Controller
+    [RoutePrefix("Administracao")]
+    public class ClienteController : Controller
     {
         private readonly ClienteAppSerice _clienteAppService = new ClienteAppSerice();
 
-        // GET: Clientes
+        //Modulo Cliente: Incluir, Editar, Listar, Consultar e Excluir
+        
+        [Route("ListaDeClientes")]
         public ActionResult Index()
         {
             return View(_clienteAppService.ObterTodos());
         }
 
-        // GET: Clientes/Details/5
+        [Route("{id:guid}/InformacoesCliente")]
         public ActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            var clienteViewModel = _clienteAppService.ObterPorId(id.Value);
-            if (clienteViewModel == null)
+            var cliente = _clienteAppService.ObterPorId(id.Value);
+            if (cliente == null)
             {
                 return HttpNotFound();
             }
-            return View(clienteViewModel);
+            return View(cliente);
         }
 
-        // GET: Clientes/Create
+        [Route("NovoCliente")]
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Clientes/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        //Lembrar de utilizar o Bind em formulários com post
+        // Lembrar de colocar o Bind para actions com post de formulários. Ex: [Bind(Include = "ClienteId,Nome,DataNascimento,DataCadastro,Email")]
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("NovoCliente")]
         public ActionResult Create(ClienteEnderecoViewModel clienteEnderecoViewModel)
         {
             if (ModelState.IsValid)
@@ -54,27 +58,25 @@ namespace Seguradora.Presentation.Web.Controllers
             return View(clienteEnderecoViewModel);
         }
 
-        // GET: Clientes/Edit/5
+        [Route("{id:guid}/EditarCliente")]
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            var clienteViewModel = _clienteAppService.ObterPorId(id.Value);
-            if (clienteViewModel == null)
+            var cliente = _clienteAppService.ObterPorId(id.Value);
+            if (cliente == null)
             {
                 return HttpNotFound();
             }
-            return View(clienteViewModel);
+            return View(cliente);
         }
 
-        // POST: Clientes/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        // Lembrar do Bind também
+        // Lembrar de colocar o Bind para actions com post de formulários. Ex: [Bind(Include = "ClienteId,Nome,DataNascimento,DataCadastro,Email")]
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Route("{id:guid}/EditarCliente")]
         public ActionResult Edit(ClienteViewModel clienteViewModel)
         {
             if (ModelState.IsValid)
@@ -85,24 +87,28 @@ namespace Seguradora.Presentation.Web.Controllers
             return View(clienteViewModel);
         }
 
-        // GET: Clientes/Delete/5
+        [ClaimsAuthorize("ModuloCliente", "Excluir")]
+        [Route("{id:guid}/ExcluirCliente")]
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            var clienteViewModel = _clienteAppService.ObterPorId(id.Value);
-            if (clienteViewModel == null)
+            var cliente = _clienteAppService.ObterPorId(id.Value);
+            if (cliente == null)
             {
                 return HttpNotFound();
             }
-            return View(clienteViewModel);
+
+            //Exemplo de como passar as permissões do usuário para View, e montar a view de acordo com as permissões
+            ViewBag.Permissoes = ((ClaimsIdentity)ControllerContext.HttpContext.User.Identity).Claims.FirstOrDefault(c => c.Type == "ModuloCliente");
+            return View(cliente);
         }
 
-        // POST: Clientes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Route("{id:guid}/ExcluirCliente")]
         public ActionResult DeleteConfirmed(Guid id)
         {
             _clienteAppService.Remover(id);

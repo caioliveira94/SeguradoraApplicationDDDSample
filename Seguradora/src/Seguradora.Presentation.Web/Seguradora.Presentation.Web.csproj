@@ -196,7 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -268,11 +268,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Clientes\Create.cshtml" />
-    <Content Include="Views\Clientes\Delete.cshtml" />
-    <Content Include="Views\Clientes\Details.cshtml" />
-    <Content Include="Views\Clientes\Edit.cshtml" />
-    <Content Include="Views\Clientes\Index.cshtml" />
+    <Content Include="Views\Cliente\Create.cshtml" />
+    <Content Include="Views\Cliente\Delete.cshtml" />
+    <Content Include="Views\Cliente\Details.cshtml" />
+    <Content Include="Views\Cliente\Edit.cshtml" />
+    <Content Include="Views\Cliente\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -289,6 +289,10 @@
     <ProjectReference Include="..\Seguradora.Application\Seguradora.Application.csproj">
       <Project>{FDEFA2FD-50AC-4507-878E-9FE75273DF4F}</Project>
       <Name>Seguradora.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguradora.Infra.CrossCutting.MvcFilters\Seguradora.Infra.CrossCutting.MvcFilters.csproj">
+      <Project>{1bc3c70b-2bfb-4dda-abaf-5b7d8a17298c}</Project>
+      <Name>Seguradora.Infra.CrossCutting.MvcFilters</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

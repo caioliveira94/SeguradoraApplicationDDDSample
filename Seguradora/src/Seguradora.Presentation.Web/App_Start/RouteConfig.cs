@@ -13,6 +13,9 @@ namespace Seguradora.Presentation.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //Le as annotation RoutePrefix e Route dos controllers (caso existam, serão prioritárias em relação as rotas padrão)
+            routes.MapMvcAttributeRoutes();
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

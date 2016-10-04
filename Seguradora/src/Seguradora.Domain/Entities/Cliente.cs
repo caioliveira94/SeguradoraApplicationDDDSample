@@ -8,6 +8,7 @@ namespace Seguradora.Domain.Entities
         public Cliente()
         {
             ClienteId = Guid.NewGuid();
+            Enderecos = new List<Endereco>(); //Instancia uma lista vazia para ser possível adicionar endereços posteriormente
         }
 
         public Guid ClienteId { get; set; }

@@ -1,10 +1,9 @@
-﻿using Seguradora.Domain.Entities;
+﻿using Dapper;
+using Seguradora.Domain.Entities;
 using Seguradora.Domain.Interfaces.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Seguradora.Infra.Data.Repository
 {
@@ -25,6 +24,38 @@ namespace Seguradora.Infra.Data.Repository
             var cliente = ObterPorId(id);
             cliente.Ativo = false;
             Atualizar(cliente);
+        }
+
+        //Leitura de dados utilizando Dapper
+        public override IEnumerable<Cliente> ObterTodos()
+        {
+            var cn = Db.Database.Connection;
+
+            var sql = @"SELECT * FROM Clientes";
+
+            //Comando "Query" chama o Dapper
+            return cn.Query<Cliente>(sql);
+        }
+
+        //Leitura de dados utilizando Dapper
+        public override Cliente ObterPorId(Guid id)
+        {
+            var cn = Db.Database.Connection;
+
+            var sql = @"SELECT * FROM Clientes c " +
+                       "LEFT JOIN Enderecos e " + 
+                       "ON c.ClienteId = e.ClienteId " + 
+                       "WHERE c.ClienteId = @sid";
+
+            //Retorna o Cliente e Endereco e vai inserir essas informações em Cliente
+            var cliente = cn.Query<Cliente, Endereco, Cliente>(sql,
+                (c, e) =>
+                {
+                    c.Enderecos.Add(e);
+                    return c;
+                }, new { sid = id }, splitOn: "ClienteId, EnderecoId");
+
+            return cliente.FirstOrDefault();
         }
     }
 }

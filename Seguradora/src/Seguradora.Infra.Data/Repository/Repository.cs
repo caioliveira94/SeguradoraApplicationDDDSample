@@ -48,12 +48,12 @@ namespace Seguradora.Infra.Data.Repository
             GC.SuppressFinalize(this); //Remove a classe da memória o quanto antes
         }
 
-        public TEntity ObterPorId(Guid id)
+        public virtual TEntity ObterPorId(Guid id)
         {
             return DbSet.Find(id); //Busca pela chave primária
         }
 
-        public IEnumerable<TEntity> ObterTodos()
+        public virtual IEnumerable<TEntity> ObterTodos()
         {
             return DbSet.ToList(); //Se a tabela for muito grande, não fazer dessa forma. Fazer como abaixo.
 

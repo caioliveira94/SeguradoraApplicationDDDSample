@@ -11,12 +11,7 @@ namespace Seguradora.Application
     public class ClienteAppSerice : IClienteAppService
     {
 
-        private readonly ClienteRepository _clienteRepository;
-
-        public ClienteAppSerice()
-        {
-            _clienteRepository = new ClienteRepository();
-        }
+        private readonly ClienteRepository _clienteRepository = new ClienteRepository();
 
         public ClienteEnderecoViewModel Adicionar(ClienteEnderecoViewModel clienteEndereco)
         {

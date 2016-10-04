@@ -1,0 +1,7 @@
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.MvcFilters\bin\Debug\Seguradora.Infra.CrossCutting.MvcFilters.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.MvcFilters\bin\Debug\Seguradora.Infra.CrossCutting.MvcFilters.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.MvcFilters\bin\Debug\System.Web.Mvc.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.MvcFilters\bin\Debug\System.Web.Mvc.xml
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.MvcFilters\obj\Debug\Seguradora.Infra.CrossCutting.MvcFilters.csprojResolveAssemblyReference.cache
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.MvcFilters\obj\Debug\Seguradora.Infra.CrossCutting.MvcFilters.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.MvcFilters\obj\Debug\Seguradora.Infra.CrossCutting.MvcFilters.pdb

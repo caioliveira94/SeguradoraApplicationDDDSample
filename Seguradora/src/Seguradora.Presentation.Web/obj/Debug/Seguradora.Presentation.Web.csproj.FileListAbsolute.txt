@@ -170,3 +170,7 @@ C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\sr
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\obj\Debug\Seguradora.Presentation.Web.csprojResolveAssemblyReference.cache
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\obj\Debug\Seguradora.Presentation.Web.dll
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\obj\Debug\Seguradora.Presentation.Web.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Dapper.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Dapper.xml
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Seguradora.Infra.CrossCutting.MvcFilters.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Seguradora.Infra.CrossCutting.MvcFilters.pdb
