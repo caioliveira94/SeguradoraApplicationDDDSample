@@ -13,17 +13,15 @@ namespace Seguradora.Infra.Data.Repository
         protected ApplicationDBContext Db;
         protected DbSet<TEntity> DbSet;
 
-        public Repository()
+        public Repository(ApplicationDBContext context)
         {
-            Db = new ApplicationDBContext();
+            Db = context;
             DbSet = Db.Set<TEntity>();
         }
 
         public virtual TEntity Adicionar(TEntity obj)
         {
-            var retorno = DbSet.Add(obj);
-            SaveChanges();
-            return retorno;
+            return DbSet.Add(obj);
         }
 
         public virtual TEntity Atualizar(TEntity obj)
@@ -31,8 +29,6 @@ namespace Seguradora.Infra.Data.Repository
             var entry = Db.Entry(obj); //Cria uma entrada de dados na memória do contexto
             DbSet.Attach(obj); //insere o objeto na memória do contexto
             entry.State = EntityState.Modified; //informa que o objeto inserido ja existe e que foi apenas modificado
-
-            SaveChanges();
 
             return obj;
         }
@@ -64,12 +60,7 @@ namespace Seguradora.Infra.Data.Repository
         public virtual void Remover(Guid id)
         {
             DbSet.Remove(DbSet.Find(id));
-            SaveChanges();
         }
 
-        public int SaveChanges()
-        {
-            return Db.SaveChanges();
-        }
     }
 }

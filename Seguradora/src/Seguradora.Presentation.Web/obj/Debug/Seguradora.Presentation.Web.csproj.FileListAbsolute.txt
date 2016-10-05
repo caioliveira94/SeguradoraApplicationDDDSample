@@ -174,3 +174,12 @@ C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\sr
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Dapper.xml
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Seguradora.Infra.CrossCutting.MvcFilters.dll
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Seguradora.Infra.CrossCutting.MvcFilters.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Seguradora.Infra.CrossCutting.IoC.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\SimpleInjector.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\SimpleInjector.Integration.Web.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\SimpleInjector.Integration.Web.Mvc.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\WebActivator.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\Seguradora.Infra.CrossCutting.IoC.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\SimpleInjector.xml
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\SimpleInjector.Integration.Web.xml
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Presentation.Web\bin\SimpleInjector.Integration.Web.Mvc.xml

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Application", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Infra.CrossCutting.MvcFilters", "src\Seguradora.Infra.CrossCutting.MvcFilters\Seguradora.Infra.CrossCutting.MvcFilters.csproj", "{1BC3C70B-2BFB-4DDA-ABAF-5B7D8A17298C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Infra.CrossCutting.IoC", "src\Seguradora.Infra.CrossCutting.IoC\Seguradora.Infra.CrossCutting.IoC.csproj", "{6B51F6A5-D3D9-4B3F-87BD-2BB57F45A672}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{1BC3C70B-2BFB-4DDA-ABAF-5B7D8A17298C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BC3C70B-2BFB-4DDA-ABAF-5B7D8A17298C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BC3C70B-2BFB-4DDA-ABAF-5B7D8A17298C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B51F6A5-D3D9-4B3F-87BD-2BB57F45A672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B51F6A5-D3D9-4B3F-87BD-2BB57F45A672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B51F6A5-D3D9-4B3F-87BD-2BB57F45A672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B51F6A5-D3D9-4B3F-87BD-2BB57F45A672}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,5 +71,6 @@ Global
 		{FC4AA3DD-1A8D-4218-B844-8E2C0D970F49} = {E37B84A6-42BB-4EDA-B04A-37DEE86B0B70}
 		{FDEFA2FD-50AC-4507-878E-9FE75273DF4F} = {3C9AB913-CBA7-4811-ABF6-5FA5280A5805}
 		{1BC3C70B-2BFB-4DDA-ABAF-5B7D8A17298C} = {9D5462CD-7661-4DA6-816A-A6282F0716FC}
+		{6B51F6A5-D3D9-4B3F-87BD-2BB57F45A672} = {9D5462CD-7661-4DA6-816A-A6282F0716FC}
 	EndGlobalSection
 EndGlobal

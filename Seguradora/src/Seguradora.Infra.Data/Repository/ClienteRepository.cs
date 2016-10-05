@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Seguradora.Domain.Entities;
 using Seguradora.Domain.Interfaces.Repository;
+using Seguradora.Infra.Data.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,12 @@ namespace Seguradora.Infra.Data.Repository
 {
     public class ClienteRepository : Repository<Cliente>, IClienteRepository
     {
+        public ClienteRepository(ApplicationDBContext context)
+            :base(context)
+        {
+
+        }
+
         public Cliente ObterPorCpf(string cpf)
         {
             return Buscar(c => c.CPF == cpf).FirstOrDefault();

@@ -18,6 +18,6 @@ namespace Seguradora.Domain.Interfaces.Repository
 
         IEnumerable<TEntity> Buscar(Expression<Func<TEntity, bool>> predicate);
 
-        int SaveChanges();
+        //int SaveChanges(); Será feito através da Unit of Work
     }
 }

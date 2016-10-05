@@ -1,4 +1,4 @@
-﻿using Seguradora.Application;
+﻿using Seguradora.Application.Interfaces;
 using Seguradora.Application.ViewModels;
 using Seguradora.Infra.CrossCutting.MvcFilters;
 using System;
@@ -12,7 +12,12 @@ namespace Seguradora.Presentation.Web.Controllers
     [RoutePrefix("Administracao")]
     public class ClienteController : Controller
     {
-        private readonly ClienteAppSerice _clienteAppService = new ClienteAppSerice();
+        private readonly IClienteAppService _clienteAppService;
+
+        public ClienteController(IClienteAppService clienteAppService)
+        {
+            _clienteAppService = clienteAppService;
+        }
 
         //Modulo Cliente: Incluir, Editar, Listar, Consultar e Excluir
         
