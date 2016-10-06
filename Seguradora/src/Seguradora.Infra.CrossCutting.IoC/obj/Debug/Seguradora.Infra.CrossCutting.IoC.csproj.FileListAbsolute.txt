@@ -17,3 +17,4 @@ C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\sr
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.IoC\obj\Debug\Seguradora.Infra.CrossCutting.IoC.csprojResolveAssemblyReference.cache
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.IoC\obj\Debug\Seguradora.Infra.CrossCutting.IoC.dll
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.IoC\obj\Debug\Seguradora.Infra.CrossCutting.IoC.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.CrossCutting.IoC\bin\Debug\DomainValidation.dll

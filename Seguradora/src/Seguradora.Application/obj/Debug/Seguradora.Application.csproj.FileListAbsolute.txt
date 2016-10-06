@@ -13,3 +13,4 @@ C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\sr
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\obj\Debug\Seguradora.Application.pdb
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\Dapper.dll
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\Dapper.xml
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Application\bin\Debug\DomainValidation.dll

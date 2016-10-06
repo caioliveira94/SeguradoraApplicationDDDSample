@@ -37,3 +37,4 @@ C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\sr
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.Data\bin\Debug\System.Web.WebPages.xml
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.Data\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.Data\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\src\Seguradora.Infra.Data\bin\Debug\DomainValidation.dll

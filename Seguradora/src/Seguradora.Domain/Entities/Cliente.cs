@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DomainValidation.Validation;
+using Seguradora.Domain.Validations;
+using System;
 using System.Collections.Generic;
 
 namespace Seguradora.Domain.Entities
@@ -19,5 +21,12 @@ namespace Seguradora.Domain.Entities
         public string CPF { get; set; }
         public bool Ativo { get; set; }
         public virtual ICollection<Endereco> Enderecos { get; set; } //Atributos externos do modelo, colocar como virtual para habilitar o lazy load
+        public ValidationResult ValidationResult { get; set; }
+
+        public bool IsValid()
+        {
+            ValidationResult = new ClienteConsistenteValidation().Validate(this);
+            return ValidationResult.IsValid;
+        }
     }
 }

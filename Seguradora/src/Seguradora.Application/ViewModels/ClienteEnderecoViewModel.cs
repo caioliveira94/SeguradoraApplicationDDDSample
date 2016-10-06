@@ -35,6 +35,9 @@ namespace Seguradora.Application.ViewModels
         [MinLength(11, ErrorMessage = "CPF deve ter {1} caracteres")]
         public string CPF { get; set; }
 
+        [ScaffoldColumn(false)]
+        public DomainValidation.Validation.ValidationResult ValidationResult { get; set; }
+
         [Key]
         public Guid EnderecoId { get; set; }
 

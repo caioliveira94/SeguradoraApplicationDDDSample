@@ -17,6 +17,11 @@ namespace Seguradora.Domain.Services
 
         public Cliente Adicionar(Cliente cliente)
         {
+            if (!cliente.IsValid())
+            {
+                return cliente;
+            }
+
             return _clienteRepository.Adicionar(cliente);
         }
 
