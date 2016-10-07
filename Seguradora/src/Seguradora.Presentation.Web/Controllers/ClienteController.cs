@@ -56,8 +56,10 @@ namespace Seguradora.Presentation.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                //viewmodel recebe o retorno do adicionar
                 clienteEnderecoViewModel = _clienteAppService.Adicionar(clienteEnderecoViewModel);
 
+                //Se o validationresult da viewmodel não for válido, varre os erros retornados e insere no ModelState
                 if (!clienteEnderecoViewModel.ValidationResult.IsValid)
                 {
                     foreach (var erro in clienteEnderecoViewModel.ValidationResult.Erros)

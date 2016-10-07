@@ -1,6 +1,7 @@
 ﻿using Seguradora.Domain.Entities;
 using Seguradora.Domain.Interfaces.Repository;
 using Seguradora.Domain.Interfaces.Services;
+using Seguradora.Domain.Validations;
 using System;
 using System.Collections.Generic;
 
@@ -17,7 +18,15 @@ namespace Seguradora.Domain.Services
 
         public Cliente Adicionar(Cliente cliente)
         {
+            //Verifica se o cliente está válido (Validações que não utilizam banco)
             if (!cliente.IsValid())
+            {
+                return cliente;
+            }
+
+            //Validações que dependem do banco
+            cliente.ValidationResult = new ClienteAptoParaCadastroValidation(_clienteRepository).Validate(cliente);
+            if(!cliente.ValidationResult.IsValid)
             {
                 return cliente;
             }

@@ -30,11 +30,13 @@ namespace Seguradora.Application
 
             //Unit of Work - Responsável por persistir no BD
             _unitOfWork.BeginTransaction();
+
+            // guarda o cliente retornado no método adicionar
             var retorno = _clienteService.Adicionar(cliente);
 
             clienteEndereco = Mapper.Map<Cliente, ClienteEnderecoViewModel>(retorno);
 
-            //Aqui ficaria a validação do dominio se vai gravar ou não
+            //Se o validationResult do cliente retornado for valido, faz a gravação
             if (retorno.ValidationResult.IsValid)
             {
                 _unitOfWork.Commit();

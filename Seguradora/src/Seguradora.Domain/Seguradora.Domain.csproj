@@ -45,7 +45,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ClienteService.cs" />
     <Compile Include="Specifications\Clientes\ClienteValidaCpfSpecification.cs" />
+    <Compile Include="Specifications\Clientes\ClienteValidaCpfUnicoSpecification.cs" />
     <Compile Include="Specifications\Clientes\ClienteValidaEmailSpecification.cs" />
+    <Compile Include="Validations\ClienteAptoParaCadastroValidation.cs" />
     <Compile Include="Validations\ClienteConsistenteValidation.cs" />
     <Compile Include="Validations\CpfValidation.cs" />
     <Compile Include="Validations\EmailValidation.cs" />

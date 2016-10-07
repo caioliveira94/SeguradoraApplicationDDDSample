@@ -6,3 +6,5 @@ C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\te
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\test\Seguradora.Domain.Tests\obj\Debug\Seguradora.Domain.Tests.csprojResolveAssemblyReference.cache
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\test\Seguradora.Domain.Tests\obj\Debug\Seguradora.Domain.Tests.dll
 C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\test\Seguradora.Domain.Tests\obj\Debug\Seguradora.Domain.Tests.pdb
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\test\Seguradora.Domain.Tests\bin\Debug\Rhino.Mocks.dll
+C:\Users\caio.oliveira\Source\Repos\SeguradoraApplicationDDDSample\Seguradora\test\Seguradora.Domain.Tests\bin\Debug\Rhino.Mocks.xml

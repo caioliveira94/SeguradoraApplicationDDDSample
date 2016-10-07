@@ -29,6 +29,8 @@ namespace Seguradora.Infra.Data.EntityConfig
 
             Property(c => c.DataCadastro)
                 .IsRequired();
+
+            Ignore(c => c.ValidationResult);
         }
     }
 }

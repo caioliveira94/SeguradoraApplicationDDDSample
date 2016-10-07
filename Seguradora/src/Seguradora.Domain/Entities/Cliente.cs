@@ -25,6 +25,7 @@ namespace Seguradora.Domain.Entities
 
         public bool IsValid()
         {
+            //Seta o ValidationResult da classe de acordo com a classe de validação criada para validar o modelo.
             ValidationResult = new ClienteConsistenteValidation().Validate(this);
             return ValidationResult.IsValid;
         }
