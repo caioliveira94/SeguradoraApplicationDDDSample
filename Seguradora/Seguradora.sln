@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Infra.CrossCutti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Domain.Tests", "test\Seguradora.Domain.Tests\Seguradora.Domain.Tests.csproj", "{D8242DED-5617-4CB0-BDB9-254174E0F27F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Seguradora.Services.REST", "src\Seguradora.Services.REST\Seguradora.Services.REST.csproj", "{72961C84-4E73-42EB-AD73-A40246E485FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -65,6 +67,10 @@ Global
 		{D8242DED-5617-4CB0-BDB9-254174E0F27F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8242DED-5617-4CB0-BDB9-254174E0F27F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8242DED-5617-4CB0-BDB9-254174E0F27F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72961C84-4E73-42EB-AD73-A40246E485FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72961C84-4E73-42EB-AD73-A40246E485FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72961C84-4E73-42EB-AD73-A40246E485FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72961C84-4E73-42EB-AD73-A40246E485FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +85,6 @@ Global
 		{1BC3C70B-2BFB-4DDA-ABAF-5B7D8A17298C} = {9D5462CD-7661-4DA6-816A-A6282F0716FC}
 		{6B51F6A5-D3D9-4B3F-87BD-2BB57F45A672} = {9D5462CD-7661-4DA6-816A-A6282F0716FC}
 		{D8242DED-5617-4CB0-BDB9-254174E0F27F} = {91920ACA-348A-4AB5-AE07-702549C93F64}
+		{72961C84-4E73-42EB-AD73-A40246E485FC} = {DAE3EF74-54E4-49F0-8624-91A77E091C7C}
 	EndGlobalSection
 EndGlobal
